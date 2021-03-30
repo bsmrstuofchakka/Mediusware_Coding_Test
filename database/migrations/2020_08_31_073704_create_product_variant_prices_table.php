@@ -15,12 +15,12 @@ class CreateProductVariantPricesTable extends Migration
     {
         Schema::create('product_variant_prices', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('product_variant_one')->nullable();
-            $table->unsignedBigInteger('product_variant_two')->nullable();
-            $table->unsignedBigInteger('product_variant_three')->nullable();
+            $table->string('product_variant_one')->nullable();
+            $table->string('product_variant_two')->nullable();
+            $table->string('product_variant_three')->nullable();
             $table->double('price');
             $table->integer('stock')->default(0);
-            $table->foreignId('product_id')->constrained()->onDelete('cascade');
+            $table->bigInteger('product_id');
             $table->timestamps();
         });
     }

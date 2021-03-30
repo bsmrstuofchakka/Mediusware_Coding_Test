@@ -16,6 +16,9 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+           <!-- Latest compiled and minified CSS -->
+
+
 </head>
 {{--<body id="page-top">--}}
 
@@ -154,7 +157,10 @@
     </div>
 </div>
 
-<!-- Scripts -->
+<!-- Scripts
+
+ -->
+
 <script src="{{ asset('js/app.js') }}" defer></script>
 </body>
 </html>
